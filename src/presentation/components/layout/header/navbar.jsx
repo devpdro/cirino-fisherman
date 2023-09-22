@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import styles from "./navbar.module.scss";
+
+import Logo from "../../assets/logo/logo.png"
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,9 +37,6 @@ export function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.header__content}>
-        <a href="#header" className={styles.logo}>
-          Logo
-        </a>
         <nav
           className={`${styles.header__content__nav} ${
             menuOpen && size.width < 768 ? styles.isMenu : ""
@@ -77,7 +76,25 @@ export function Navbar() {
                 href="#projects"
                 onClick={menuToggleHandler}
               >
-                Fale conosco
+                <img className={styles.img_logo} src={Logo} alt="Logo" />
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.link}
+                href="#projects"
+                onClick={menuToggleHandler}
+              >
+                Endereço
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.link}
+                href="#projects"
+                onClick={menuToggleHandler}
+              >
+                Insta
               </a>
             </li>
             <li>

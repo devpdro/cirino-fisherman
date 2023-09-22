@@ -1,11 +1,13 @@
 import styles from "./header.module.scss";
+import { Images } from "./images";
 
-import imgHeader from '../../assets/img-header-oficial.jpg'
+import { Navbar } from "./navbar";
 
 export function Header() {
     return (
     <header className={styles.header}>
-        <img src={imgHeader} alt="Foto" />
+        <Navbar />
+        <Images />
     </header>
   );
 }
