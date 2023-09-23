@@ -49,7 +49,7 @@ export function Navbar() {
                 href="#header"
                 onClick={menuToggleHandler}
               >
-                Quem somos
+                Home
               </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ export function Navbar() {
                 href="#about"
                 onClick={menuToggleHandler}
               >
-                Cárdapio
+                Pesqueiro
               </a>
             </li>
             <li>
@@ -67,7 +67,7 @@ export function Navbar() {
                 href="#skills"
                 onClick={menuToggleHandler}
               >
-                Endereços
+                Restaraunte
               </a>
             </li>
             <li>
@@ -85,7 +85,7 @@ export function Navbar() {
                 href="#projects"
                 onClick={menuToggleHandler}
               >
-                Endereço
+                Fotos
               </a>
             </li>
             <li>
@@ -94,7 +94,7 @@ export function Navbar() {
                 href="#projects"
                 onClick={menuToggleHandler}
               >
-                Insta
+                Preço
               </a>
             </li>
             <li>
@@ -103,7 +103,7 @@ export function Navbar() {
                 href="#contact"
                 onClick={menuToggleHandler}
               >
-                Contato
+                Localização
               </a>
             </li>
           </ul>
