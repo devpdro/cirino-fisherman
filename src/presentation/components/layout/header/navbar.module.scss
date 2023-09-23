@@ -1,5 +1,5 @@
-@import "../../../../main/config/mixin.scss";
-@import "../../../../main/config/variables.scss";
+@import 'utils/mixin.scss';
+@import 'main/config/variables.scss';
 
 @mixin breakpoint($point) {
   @if $point == md {
@@ -10,7 +10,7 @@
 }
 .navbar {
   background-color: #fff;
-  border-bottom: 4px solid #80B240;
+  border-bottom: 4px solid #80b240;
   position: fixed;
   top: 0;
   height: 150px;
@@ -28,7 +28,7 @@
       font-size: 2rem;
       text-decoration: none;
       color: #000;
-      .img_logo  {
+      .img_logo {
         width: 100px;
         height: 50px;
       }
@@ -76,16 +76,15 @@
             }
           }
           .link {
-            font-family: "Poppins", sans-serif;
-            color: #012E19;
+            font-family: 'Poppins', sans-serif;
+            color: #012e19;
             text-transform: uppercase;
             text-decoration: none;
             font-size: 1rem;
-            padding: 0.3rem 0.2rem;   
-            &:hover  {
+            padding: 0.3rem 0.2rem;
+            &:hover {
               @include transition;
-              color: #80B240;
-              
+              color: #80b240;
             }
             .img_logo {
               width: 180px;
@@ -116,7 +115,7 @@
 @media screen and (max-width: 1280px) {
   .navbar {
     @include breakpoint(md) {
-        padding: 0 6rem;
+      padding: 0 6rem;
     }
     max-width: 1280px;
     margin: 0 auto;

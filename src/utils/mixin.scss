@@ -1,5 +1,4 @@
-@import "./variables.scss";
-
+@import 'main/config/variables.scss';
 @mixin centralize_content {
   display: flex;
   justify-content: center;

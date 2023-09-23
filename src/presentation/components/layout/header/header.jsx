@@ -1,13 +1,12 @@
-import styles from "./header.module.scss";
-import { Images } from "./images";
-
-import { Navbar } from "./navbar";
+import styles from './header.module.scss'
+import { Images } from './images'
+import { Navbar } from './navbar'
 
 export function Header() {
-    return (
+  return (
     <header className={styles.header}>
-        <Navbar />
-        <Images />
+      <Navbar />
+      <Images />
     </header>
-  );
+  )
 }

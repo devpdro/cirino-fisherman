@@ -1,8 +1,9 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import { data } from "../../../../main/data/db";  
+import { Carousel } from 'react-responsive-carousel'
 
-import styles from "./images.module.scss";
+import { images_fishing } from 'presentation/components/assets/fishing-boat/images-fishing'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+
+import styles from './images.module.scss'
 
 export function Images() {
   return (
@@ -15,15 +16,17 @@ export function Images() {
         dynamicHeight={false}
         className={styles.carousel}
       >
-        {data.slides.map((slide, index) => (
+        {images_fishing.slides.map((slide, index) => (
           <div key={index} className={styles.slide}>
             <div className={styles.imageContainer}>
               <img src={slide.src} alt={slide.alt} />
-              <div className={styles.imageText}>PESQUEIRO DIVERSÃO PARA TODA FAMÍLIA</div>
+              <div className={styles.imageText}>
+                PESQUEIRO DIVERSÃO PARA TODA FAMÍLIA
+              </div>
             </div>
           </div>
         ))}
       </Carousel>
     </div>
-  );
-};
+  )
+}

@@ -1,45 +1,43 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-
-import styles from "./navbar.module.scss";
-
-import Logo from "../../assets/logo/logo.png"
+import Logo from '../../assets/soon/logo.png'
+import styles from './navbar.module.scss'
 
 export function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
   const [size, setSize] = useState({
     width: undefined,
     height: undefined,
-  });
+  })
 
   useEffect(() => {
     const handleResize = () => {
       setSize({
         width: window.innerWidth,
         height: window.innerHeight,
-      });
-    };
-    window.addEventListener("resize", handleResize);
+      })
+    }
+    window.addEventListener('resize', handleResize)
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     if (size.width > 768 && menuOpen) {
-      setMenuOpen(false);
+      setMenuOpen(false)
     }
-  }, [size.width, menuOpen]);
+  }, [size.width, menuOpen])
 
   const menuToggleHandler = () => {
-    setMenuOpen((p) => !p);
-  };
+    setMenuOpen((p) => !p)
+  }
   return (
     <nav className={styles.navbar}>
       <div className={styles.header__content}>
         <nav
           className={`${styles.header__content__nav} ${
-            menuOpen && size.width < 768 ? styles.isMenu : ""
+            menuOpen && size.width < 768 ? styles.isMenu : ''
           }`}
         >
           <ul>
@@ -117,5 +115,5 @@ export function Navbar() {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}

@@ -1,15 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-// eslint-disable-next-line no-unused-vars
-import './index.css'
-import { App } from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import 'main/config/fonts.scss'
+
+import 'presentation/styles/global.scss'
+import { App } from './App'
+import { reportWebVitals } from './reportWebVitals'
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);
+)
 
-reportWebVitals();
+reportWebVitals()
