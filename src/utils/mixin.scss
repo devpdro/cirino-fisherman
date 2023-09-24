@@ -1,17 +1,24 @@
-@import 'main/config/variables.scss';
-@mixin centralize_content {
+@import '../main/config/variables.scss';
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}
+@mixin centralize_center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin center_around {
+@mixin centralize_around {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-@mixin center_between {
+@mixin centralize_between {
   display: flex;
   justify-content: space-between;
   align-items: center;
