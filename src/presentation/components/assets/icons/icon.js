@@ -1,3 +1,4 @@
+import { AiOutlineCheck } from 'react-icons/ai'
 import { BiRestaurant } from 'react-icons/bi'
 import {
   BsArrowCounterclockwise,
@@ -22,4 +23,5 @@ export const ICON = {
   FaBan,
   FaDollarSign,
   IoLocationSharp,
+  AiOutlineCheck,
 }

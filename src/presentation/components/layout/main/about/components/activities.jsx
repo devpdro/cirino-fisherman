@@ -27,7 +27,7 @@ export function Activities() {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <div className={`${styles.col_third}`}>
         <div
           className={`hover ${styles.panel} ${isFlipped1 ? styles.flip : ''}`}
@@ -132,6 +132,6 @@ export function Activities() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

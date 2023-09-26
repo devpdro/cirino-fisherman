@@ -1,6 +1,6 @@
 .thumb_container {
   font-family: 'Poppins', sans-serif;
-  background-image: url('../../../../assets/fishing-boat/img/lago_e_arvores.JPG');
+  background-image: url('../../../../assets/fishing-boat/img/fim_do_dia_passaros.JPG');
   margin: 1rem 0rem 5rem 0;
   display: flex;
   justify-content: center;
@@ -8,6 +8,8 @@
   background-attachment: fixed;
   background-size: cover;
   align-items: center;
+  border-top: 4px solid #012e19;
+  border-bottom: 4px solid #012e19;
   .image_container {
     position: relative;
     width: 100%;

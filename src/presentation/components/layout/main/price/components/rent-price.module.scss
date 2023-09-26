@@ -1,18 +1,33 @@
 .container {
-  max-width: 1280px;
+  max-width: 1380px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-  font-weight: none !important;
+  text-align: center;
+  .subtitle {
+    color: #80b240;
+    font-size: 1.1rem;
+    background-color: rgba(128, 178, 64, 0.5);
+    padding: 0.3rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .title {
+    margin: 1.5rem 0rem 7rem 0rem;
+    font-size: 3em;
+    color: #012e19;
+  }
   .price_container {
     margin-bottom: 9rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 4.5rem;
     border-radius: 4px;
-    padding: 0 2rem;
+    text-align: left;
     .shed {
       width: 45%;
-      height: 530px;
+      height: 607px;
       background-color: #81b24046;
       margin: 0 4rem 0 0;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -40,6 +55,8 @@
           text-align: center;
         }
         .btn {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.1rem;
           padding: 1rem;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           width: 100%;
@@ -48,15 +65,23 @@
           outline: none;
         }
         .text_performance {
-          font-family: 'DM Sans', sans-serif;
-          padding: 0.5rem 0 2rem 0rem;
+          font-family: 'Poppins', sans-serif;
+          padding: 0.5rem 0 3rem 0rem;
           text-align: center;
           border-bottom: 1px solid #80b240;
         }
       }
       .box_fantasies {
         padding: 1rem 1.5rem 1rem 1.5rem;
+        .icon {
+          padding-right: 0.5rem;
+          font-size: 2rem;
+          color: #80b240;
+        }
         p {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
         }
       }
     }

@@ -1,12 +1,29 @@
 .container {
   max-width: 1590px;
   margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  .subtitle {
+    color: #80b240;
+    font-size: 1.1rem;
+    background-color: rgba(128, 178, 64, 0.5);
+    padding: 0.3rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .title {
+    margin: 1.5rem 0rem 5.5rem 0rem;
+    font-size: 3em;
+    color: #012e19;
+  }
   .images_container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    img  {
+    img {
+      background-size: cover;
       width: 300px;
       height: 250px;
       margin: 1rem 0.5rem 1rem 0.5rem;
@@ -14,5 +31,4 @@
       border: 8px solid #fff;
     }
   }
-  
 }

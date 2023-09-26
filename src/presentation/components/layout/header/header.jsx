@@ -1,10 +1,9 @@
 import { CarouselImages } from './carousel-images/carousel-images'
-import styles from './header.module.scss'
 import { Navbar } from './navbar/navbar'
 
 export function Header() {
   return (
-    <header className={styles.header}>
+    <header>
       <Navbar />
       <CarouselImages />
     </header>
