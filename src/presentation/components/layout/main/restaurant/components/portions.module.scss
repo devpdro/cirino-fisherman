@@ -1,38 +1,50 @@
 .container {
-  .container_cortions {
-    font-family: 'Poppins', sans-serif;
-    max-width: 1280px;
-    margin: 0 auto;
-    .subtitle {
-      color: #80b240;
-      font-size: 1.1rem;
-      background-color: rgba(128, 178, 64, 0.5);
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1480px;
+  margin: 0 auto;
+  text-align: center;
+  .subtitle {
+    color: #80b240;
+    font-size: 1.1rem;
+    background-color: rgba(128, 178, 64, 0.5);
+    padding: 0.3rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .title {
+    margin: 1.5rem 0rem 2.5rem 0rem;
+    font-size: 3em;
+    color: #012e19;
+  }
+  .carousel_container {
+    margin-bottom: 7rem;
+    cursor: pointer;
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 250px;
+      margin: 5rem 1.5rem 0 1.8rem;
+      border-radius: 1px 1px 0px 0px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border: 3px solid #80b240;
     }
-    .title {
-      margin: 1.5rem 0rem 5rem 0rem;
-      font-size: 3em;
+    .description {
       color: #012e19;
-    }
-    .food_carousel {
-      margin: 20px;
-      .carousel {
-        max-width: 600px;
-        margin: 0 auto;
-      }
-      .food_item {
-        text-align: center;
-        img {
-          max-width: 100%;
-          height: auto;
-        }
-        p {
-          margin-top: 10px;
-          font-weight: bold;
-        }
-      }
+      text-align: center;
+      padding: 0.9rem 0rem 1rem 0rem;
+      padding-top: 0.9rem;
+      padding-bottom: 1rem;
+      width: 300px;
+      margin: 0rem 1.5rem 5rem 1.8rem;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      font-size: 1.4rem;
+      border: 3px solid #80b240;
+      border-top: none;
+      text-transform: uppercase;
+      border-radius: 0px 0px 10px 10px;
     }
   }
 }

@@ -9,7 +9,7 @@ export function About() {
       <h1 className={styles.title}>Conheça</h1>
       <div className={styles.box_about}>
         <div className={styles.about}>
-          <h4>Dona Crish</h4>
+          <h4>Aurea Benedito Cirino</h4>
           <h1>Fundou o Pesqueiro do Cirino</h1>
           <p>
             Inaugurado em 1995, o Pesqueiro Cirino, localizado na região de São

@@ -37,16 +37,17 @@ export function Activities() {
           <div className={styles.front}>
             <div className={styles.box1}>
               <div className={styles.box_icon}>
-                <ICON.BsArrowCounterclockwise className={styles.icon} />
+                <ICON.BsPencilSquare className={styles.icon} />
+                <h2>Dicas</h2>
+                <p>Três dicas para quem gosta dessa modalidade.</p>
               </div>
             </div>
           </div>
           <div className={styles.back}>
             <div className={styles.box2}>
-              <p>
-                A pesca esportiva é uma espécie de pescaria onde você pega um
-                grande peixe e tira algumas fotos com ele.
-              </p>
+              <p>1 - Saiba quais as melhores iscas.</p>
+              <p>2 - Treine, pois a prática leva à perfeição.</p>
+              <p>3 - Saiba fazer os nós básicos.</p>
             </div>
           </div>
         </div>
@@ -60,17 +61,18 @@ export function Activities() {
         >
           <div className={styles.front}>
             <div className={styles.box1}>
-              <div>
-                <ICON.BsCalendarRange />
+              <div className={styles.box_icon}>
+                <ICON.FaBan className={styles.icon} />
+                <h2>Proibido</h2>
+                <p>Três coisas proibidas para se fazer no pesqueiro.</p>
               </div>
             </div>
           </div>
           <div className={styles.back}>
             <div className={styles.box2}>
-              <p>
-                Durante a semana somente pesca agendada para grupos fechados e
-                exclusivos.
-              </p>
+              <p>1 - Uso de anzol com fisga.</p>
+              <p>2 - Jogar lixo ou resto de iscas na água.</p>
+              <p>3 - Uso de linha multifilamento.</p>
             </div>
           </div>
         </div>
@@ -84,16 +86,20 @@ export function Activities() {
         >
           <div className={styles.front}>
             <div className={styles.box1}>
-              <div>
-                <ICON.BsCardChecklist />
+              <div className={styles.box_icon}>
+                <ICON.FaDollarSign className={styles.icon} />
+                <h2>Preço</h2>
+                <p>
+                  Pesca a KG, nessa categoria não cobramos a taxa de entrada.
+                </p>
               </div>
             </div>
           </div>
           <div className={styles.back}>
             <div className={styles.box2}>
               <p>
-                Nessa categoria não cobramos a taxa de entrada, mas o peixe que
-                você pegar tem que levar.
+                Mas o peixe que você pegar tem que pagar, temos Pacu, Tambaqui
+                Dourado, Pintado, Tilapia e Carpa.
               </p>
             </div>
           </div>
@@ -107,16 +113,20 @@ export function Activities() {
         >
           <div className={styles.front}>
             <div className={styles.box1}>
-              <div>
-                <ICON.BsCardChecklist />
+              <div className={styles.box_icon}>
+                <ICON.IoLocationSharp className={styles.icon} />
+                <h2>Localização</h2>
+                <p>
+                  Estamos ansiosos para recebê-lo no nosso incrível endereço!
+                </p>
               </div>
             </div>
           </div>
           <div className={styles.back}>
             <div className={styles.box2}>
               <p>
-                Nessa categoria não cobramos a taxa de entrada, mas o peixe que
-                você pegar tem que levar.
+                Endereço: Rodovia SP-191 - Km 199 <br /> Número: Km 199 <br />
+                Cidade: São Pedro - SP <br /> CEP: 13520-000
               </p>
             </div>
           </div>

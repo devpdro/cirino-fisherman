@@ -1,0 +1,69 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: none !important;
+  .price_container {
+    margin-bottom: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 2rem;
+    .shed {
+      width: 45%;
+      height: 530px;
+      background-color: #81b24046;
+      margin: 0 4rem 0 0;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      .box_title {
+        h2 {
+          padding: 1.6rem 0rem 0.4rem 1.5rem;
+          font-size: 1.5rem;
+        }
+        p {
+          padding: 0rem 0rem 0.8rem 1.5rem;
+        }
+      }
+      .box_price {
+        padding: 0rem 1.5rem 1rem 1.5rem;
+        .text_price {
+          text-align: center;
+          padding: 0rem 0 0.8rem 0;
+          font-size: 1.2rem;
+          span {
+            font-size: 2.5rem;
+            color: #80b240;
+          }
+        }
+        .text_fees {
+          text-align: center;
+        }
+        .btn {
+          padding: 1rem;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          width: 100%;
+          background-color: #80b240;
+          border: none;
+          outline: none;
+        }
+        .text_performance {
+          font-family: 'DM Sans', sans-serif;
+          padding: 0.5rem 0 2rem 0rem;
+          text-align: center;
+          border-bottom: 1px solid #80b240;
+        }
+      }
+      .box_fantasies {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        p {
+        }
+      }
+    }
+    .fishing {
+      width: 45%;
+      height: 500px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}

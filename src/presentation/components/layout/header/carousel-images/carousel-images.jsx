@@ -14,6 +14,7 @@ export function CarouselImages() {
         showThumbs={false}
         infiniteLoop={true}
         dynamicHeight={false}
+        showIndicators={false}
         className={styles.carousel}
       >
         {images_fishing.slides.map((slide, index) => (

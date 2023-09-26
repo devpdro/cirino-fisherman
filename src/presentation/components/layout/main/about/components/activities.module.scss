@@ -39,9 +39,9 @@
 /* Flip Panel */
 .wrapper {
   display: flex;
-  width: 1280px;
+  width: 1380px;
   margin: 3.5rem auto 0rem auto;
-  padding-left: 8rem;
+  padding-left: 4.8rem;
   height: 350px;
   overflow: hidden;
 }
@@ -95,19 +95,27 @@
 
 .box1 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #fff;
+  background-color: #81b24046;
   width: 200px;
   height: 240px;
   margin: 4rem auto;
   padding: 20px;
   border-radius: 2px;
   .box_icon {
+    padding: 0.1rem 0 0.5rem 0;
     .icon {
-      color: #fff;
-      border: 4px solid #80b240;
+      color: #000;
+      background-color: #81b24046;
       border-radius: 50%;
       font-size: 4rem;
-      padding: 0.5rem 0.5rem;
+      padding: 1rem 0.5rem;
+    }
+    h2 {
+      padding-top: 0.2rem;
+      font-size: 1.4rem;
+    }
+    p {
+      padding-top: 0.2rem;
     }
   }
 }
@@ -120,4 +128,7 @@
   margin: 3.5rem auto;
   padding: 20px;
   border-radius: 2px;
+  p {
+    text-align: left;
+  }
 }

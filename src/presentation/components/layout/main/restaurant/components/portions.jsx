@@ -1,46 +1,35 @@
-import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
 
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-
+import '@splidejs/splide/dist/css/splide.min.css'
+import Food from '../../../../assets/foods/porcao.jpg'
 import styles from './portions.module.scss'
-
-const foodItems = [
-  {
-    name: 'Hambúrguer',
-    image: 'burger.jpg',
-  },
-  {
-    name: 'Pizza',
-    image: 'pizza.jpg',
-  },
-  {
-    name: 'Sushi',
-    image: 'sushi.jpg',
-  },
-]
-
 export function Portions() {
+  const slideData = [
+    { image: Food, description: 'Batata frita' },
+    { image: Food, description: 'Polenta' },
+    { image: Food, description: 'Frango' },
+  ]
+
   return (
     <section className={styles.container}>
-      <div className={styles.container_cortions}>
-        <span className={styles.subtitle}>Variedade de comidas</span>
-        <h1 className={styles.title}>Porções</h1>
-        <div className={styles.food_carousel}>
-          <Carousel
-            showArrows={true}
-            infiniteLoop={true}
-            autoPlay={true}
-            interval={3000}
-          >
-            {foodItems.map((item, index) => (
-              <div key={index} className={styles.food_item}>
-                <img src={`/images/${item.image}`} alt={item.name} />
-                <p>{item.name}</p>
-              </div>
-            ))}
-          </Carousel>
-        </div>
+      <span className={styles.subtitle}>Variedade de comidas</span>
+      <h1 className={styles.title}>Porções</h1>
+      <div className={styles.carousel_container}>
+        <Splide
+          options={{
+            type: 'loop',
+            perPage: 4,
+            perMove: 1,
+            gap: '1rem',
+          }}
+        >
+          {slideData.map((slide, index) => (
+            <SplideSlide key={index}>
+              <img src={slide.image} alt={`Imagem ${index + 1}`} />
+              <div className={styles.description}>{slide.description}</div>
+            </SplideSlide>
+          ))}
+        </Splide>
       </div>
     </section>
   )
