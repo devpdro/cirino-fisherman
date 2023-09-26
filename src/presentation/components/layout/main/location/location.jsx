@@ -6,6 +6,7 @@ export function Location() {
     <section className={styles.container}>
       <LocationThumb title="Localização" subtitle="localizar" />
       <Map />
+      Refazer essa parte
     </section>
   )
 }
