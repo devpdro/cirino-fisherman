@@ -1,5 +1,5 @@
 import { AiOutlineCheck } from 'react-icons/ai'
-import { BiRestaurant } from 'react-icons/bi'
+import { BiRestaurant, BiLogoWhatsapp } from 'react-icons/bi'
 import {
   BsArrowCounterclockwise,
   BsCalendarRange,
@@ -24,4 +24,5 @@ export const ICON = {
   FaDollarSign,
   IoLocationSharp,
   AiOutlineCheck,
+  BiLogoWhatsapp,
 }

@@ -4,7 +4,10 @@ import { GalleryThumb } from './components/gallery-thumb'
 export function Gallery() {
   return (
     <section>
-      <GalleryThumb title="Galeria de fotos" subtitle="fotos" />
+      <GalleryThumb
+        title="Galeria de fotos"
+        subtitle="Explorando a beleza das pescarias."
+      />
       <GalleryImages />
     </section>
   )

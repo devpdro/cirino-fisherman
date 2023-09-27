@@ -18,9 +18,8 @@ export function About() {
             que buscam escapar do estresse cotidiano. Sua infraestrutura para
             pesca esportiva foi fundamental para seu sucesso. Além de apreciar a
             beleza natural ao redor, nossos pescadores desfrutam da emocionante
-            pesca de peixes gigantes, como Pacus, Tambaquis, Pirararas,
-            Dourados, Cachapiras e Pintados, que proporcionam experiências
-            inesquecíveis.
+            pesca de peixes gigantes, como Pacus, Tambaquis, Dourados, Pintados,
+            Tilápias e Carpas, que proporcionam experiências inesquecíveis.
           </p>
         </div>
         <div className={styles.pesqueiro}>

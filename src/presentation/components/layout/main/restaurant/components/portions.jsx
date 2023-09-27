@@ -1,15 +1,9 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-
 import '@splidejs/splide/dist/css/splide.min.css'
-import Food from '../../../../assets/foods/porcao.jpg'
+import images_foods from 'presentation/components/assets/foods/images_foods'
+
 import styles from './portions.module.scss'
 export function Portions() {
-  const slideData = [
-    { image: Food, description: 'Batata frita' },
-    { image: Food, description: 'Polenta' },
-    { image: Food, description: 'Frango' },
-  ]
-
   return (
     <section className={styles.container}>
       <span className={styles.subtitle}>Variedade de comidas</span>
@@ -23,9 +17,9 @@ export function Portions() {
             gap: '1rem',
           }}
         >
-          {slideData.map((slide, index) => (
+          {images_foods.map((slide, index) => (
             <SplideSlide key={index}>
-              <img src={slide.image} alt={`Imagem ${index + 1}`} />
+              <img src={slide.src} alt={slide.alt} />
               <div className={styles.description}>{slide.description}</div>
             </SplideSlide>
           ))}
