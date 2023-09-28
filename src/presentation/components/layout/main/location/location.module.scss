@@ -1,16 +1,196 @@
 .container {
-    max-width: 1480px;
-    margin: 0 auto;
-    .box_location {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        .contact {
-            border: 1px solid;
+  max-width: 1480px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  .subtitle {
+    color: #80b240;
+    font-size: 1.1rem;
+    background-color: rgba(128, 178, 64, 0.5);
+    padding: 0.3rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .title {
+    margin: 1.5rem 0rem 5.8rem 0rem;
+    font-size: 3em;
+    color: #012e19;
+  }
+  .box_location {
+    margin: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+    .box_contact {
+      display: flex;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      .contact {
+        padding: 1rem 2rem 2rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        margin: 0 2rem;
+        border-radius: 2px;
+        div {
+          display: flex;
+          align-items: center;
         }
-        .map {
-            width: 50%;
+        span {
+          display: flex;
+          align-items: center;
+          .icon {
+            color: #012e19;
+            font-size: 2rem;
+            padding-right: 0.2rem;
+          }
         }
+        h3 {
+          font-size: 1.8rem;
+          color: #012e19;
+        }
+        p {
+          font-size: 1.1rem;
+          text-align: left;
+          color: #012e19;
+        }
+      }
+      .time {
+        margin: 0 2rem;
+        padding: 1rem 2rem 2rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 2px;
+        div {
+          display: flex;
+          align-items: center;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          .icon {
+            color: #012e19;
+            font-size: 2rem;
+            padding-right: 0.2rem;
+          }
+        }
+        h3 {
+          font-size: 1.8em;
+          color: #012e19;
+        }
+        p {
+          font-size: 1.1rem;
+          text-align: left;
+          color: #012e19;
+        }
+      }
     }
+    .map {
+      width: 100vw;
+    }
+  }
+}
+
+/**
+* ! Responsive
+*/
+
+@media (max-width: 767px) {
+  .subtitle {
+    color: #80b240;
+    font-size: 1rem !important;
+    background-color: rgba(128, 178, 64, 0.5);
+    padding: 0.3rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .title {
+    margin: 1.5rem 0rem 0% 0rem;
+    font-size: 2.4rem !important;
+    color: #012e19;
+  }
+}
+
+/**
+* ! Responsive
+*/
+
+@media (min-width: 767px) and (max-width: 1280px) {
+  .box_location {
+    margin: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+    .box_contact {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+
+      .contact {
+        padding: 1rem 2rem 2rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        margin: 0 2rem;
+        border-radius: 2px;
+        width: 550px;
+        div {
+          display: flex;
+          align-items: center;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          .icon {
+            color: #012e19;
+            font-size: 2rem;
+            padding-right: 0.2rem;
+          }
+        }
+        h3 {
+          font-size: 1.8rem;
+          color: #012e19;
+        }
+        p {
+          font-size: 1.1rem;
+          text-align: left;
+          color: #012e19;
+        }
+      }
+      .time {
+        margin: 0 2rem;
+        padding: 1rem 2rem 2rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 2px;
+        width: 550px;
+        div {
+          display: flex;
+          align-items: center;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          .icon {
+            color: #012e19;
+            font-size: 2rem;
+            padding-right: 0.2rem;
+          }
+        }
+        h3 {
+          font-size: 1.8em;
+          color: #012e19;
+        }
+        p {
+          font-size: 1.1rem;
+          text-align: left;
+          color: #012e19;
+        }
+      }
+    }
+    .map {
+      width: 100vw;
+    }
+  }
 }
