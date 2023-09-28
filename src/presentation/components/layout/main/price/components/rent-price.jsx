@@ -21,7 +21,7 @@ export function RentPrice() {
             <input
               className={styles.btn}
               type="button"
-              value="Explorar galeria de fotos"
+              value="Entrar em Contato"
             />
             <p className={styles.text_performance}>Local de alta qualidade</p>
           </div>
