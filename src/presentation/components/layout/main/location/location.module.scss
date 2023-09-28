@@ -1,0 +1,16 @@
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+    .box_location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .contact {
+            border: 1px solid;
+        }
+        .map {
+            width: 50%;
+        }
+    }
+}

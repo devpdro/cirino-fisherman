@@ -44,7 +44,7 @@ export function RentPrice() {
             </p>
           </div>
         </div>
-        <div className={styles.shed}>
+        <div className={styles.fishing}>
           <div className={styles.box_title}>
             <h2>Pesqueiro</h2>
             <p>Uma experiência única aguarda por você.</p>

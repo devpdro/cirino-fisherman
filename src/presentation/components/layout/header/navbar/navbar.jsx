@@ -17,9 +17,14 @@ export function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.header__content}>
+        <div className={styles.box_logo}>
+          <a href="#pesqueiro">
+            <img className={styles.img_logo_logo} src={Logo} alt="Logo" />
+          </a>
+        </div>
         <nav
           className={`${styles.header__content__nav} ${
-            menuOpen && screenWidth < 768 ? styles.isMenu : ''
+            menuOpen && screenWidth < 1280 ? styles.isMenu : ''
           }`}
         >
           <ul>
@@ -50,7 +55,7 @@ export function Navbar() {
                 Lanchonete
               </a>
             </li>
-            <li>
+            <div className={styles.div_logo}>
               <a
                 className={styles.link}
                 href="#sobre-nos"
@@ -58,10 +63,10 @@ export function Navbar() {
               >
                 <img className={styles.img_logo} src={Logo} alt="Logo" />
               </a>
-            </li>
+            </div>
             <li>
               <a
-                className={styles.link}
+                className={`${styles.link}`}
                 href="#preco"
                 onClick={menuToggleHandler}
               >

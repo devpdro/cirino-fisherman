@@ -10,6 +10,7 @@ import { FaBan, FaDollarSign } from 'react-icons/fa'
 import { GiBoatFishing } from 'react-icons/gi'
 import { IoMdImages } from 'react-icons/io'
 import { IoLocationOutline, IoLocationSharp } from 'react-icons/io5'
+import { PiArrowFatLineRightFill } from 'react-icons/pi'
 
 export const ICON = {
   BiRestaurant,
@@ -25,4 +26,5 @@ export const ICON = {
   IoLocationSharp,
   AiOutlineCheck,
   BiLogoWhatsapp,
+  PiArrowFatLineRightFill,
 }

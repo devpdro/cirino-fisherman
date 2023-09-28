@@ -28,6 +28,11 @@
           height: 100vh;
         }
         .imageText {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: wrap;
           margin-top: 5rem;
           font-family: 'Poppins';
           position: absolute;
@@ -38,6 +43,7 @@
           font-size: 1rem;
           z-index: 1;
           h1 {
+            
             font-weight: 900;
             font-size: 2.4rem;
             margin-bottom: 0.5rem;

@@ -11,14 +11,22 @@ export function Portions() {
       <div className={styles.carousel_container}>
         <Splide
           options={{
-            type: 'loop',
-            perPage: 4,
+            type: 'slide',
+            perPage:
+              window.innerWidth < 768
+                ? 1
+                : window.innerWidth < 1024
+                ? 2
+                : window.innerWidth < 1280
+                ? 3
+                : 4,
             perMove: 1,
             gap: '1rem',
+            arrows: false,
           }}
         >
           {images_foods.map((slide, index) => (
-            <SplideSlide key={index}>
+            <SplideSlide className={styles.box_carousel} key={index}>
               <img src={slide.src} alt={slide.alt} />
               <div className={styles.description}>{slide.description}</div>
             </SplideSlide>

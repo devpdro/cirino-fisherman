@@ -8,15 +8,21 @@
   top: 0;
   height: 140px;
   width: 100%;
+  color: #012e19;
   z-index: 1;
+
   .header__content {
     @include centralize_center;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 2rem 0 0.1rem;
     position: relative;
     height: 100%;
     z-index: 999;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .header__content__nav {
       @include breakpoint(md) {
         transform: none;
@@ -34,12 +40,18 @@
       height: 100vh;
       position: fixed;
       flex-direction: column;
-      text-align: center;
-      background: rgba($background-color, 0.9);
-      backdrop-filter: blur(2px);
+      text-align: left;
+      background: rgba(#dceacb, 1);
+      backdrop-filter: blur(3px);
       transform: translate(0);
       transition: 0.3s ease transform;
-
+      .div_logo {
+        .img_logo {
+          padding: 1rem 0.2rem;
+          width: 190px;
+          height: 220px;
+        }
+      }
       ul {
         @include breakpoint(md) {
           flex-direction: row;
@@ -61,7 +73,6 @@
               margin-right: 16px;
             }
           }
-
           .link {
             font-family: 'Poppins', sans-serif;
             color: #012e19;
@@ -70,7 +81,6 @@
             font-size: 1rem;
             padding: 0.3rem 0.2rem;
             position: relative;
-
             &::before {
               content: '';
               position: absolute;
@@ -98,7 +108,7 @@
         }
       }
       &.isMenu {
-        transform: translate(100%);
+        transform: translate(90%);
       }
     }
 
@@ -127,16 +137,61 @@
 @media screen and (max-width: 1280px) {
   .navbar {
     @include breakpoint(md) {
-      padding: 0 6rem;
+      padding: 0 2rem;
     }
-    max-width: 1280px;
-    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 2px solid #80b240;
     position: fixed;
     top: 0;
-    z-index: 1;
-    height: 80px;
+    height: 140px;
     width: 100%;
-    padding: 0 1.5rem;
-    transition: 0.3s ease all;
+    z-index: 1;
+  }
+}
+
+/**
+* ! code to make the layout responsive
+*/
+
+@media (max-width: 1280px) {
+  .header__content {
+    .box_logo {
+      .img_logo_logo {
+        padding: 1rem 0.2rem;
+        width: 190px;
+        height: 220px;
+      }
+    }
+    .img_logo {
+      display: none;
+    }
+  }
+}
+
+/**
+* ! code to make the layout responsive
+*/
+
+@media (min-width: 767px) {
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/**
+* ! code to make the layout responsive
+*/
+
+@media (min-width: 1280px) {
+  .header__content {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+
+    .img_logo_logo {
+      display: none;
+    }
   }
 }
