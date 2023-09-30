@@ -5,7 +5,7 @@ export function WhatsAppButton() {
   return (
     <div className="whatsapp-button">
       <a
-        href="https://api.whatsapp.com/send?phone=5519998853434"
+        href="https://api.whatsapp.com/send?phone=5519997715391"
         target="_blank"
         rel="noopener noreferrer"
       >

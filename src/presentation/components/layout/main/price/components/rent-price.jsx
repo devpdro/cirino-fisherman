@@ -17,12 +17,19 @@ export function RentPrice() {
             <p className={styles.text_price}>
               Apenas <span>Sob Orçamento</span>
             </p>
-            <p className={styles.text_fees}>em até 5 vezes sem juros!</p>
-            <input
-              className={styles.btn}
-              type="button"
-              value="Entrar em Contato"
-            />
+            <p className={styles.text_fees}>em até 3 vezes sem juros!</p>
+            <a
+              href="https://api.whatsapp.com/send?phone=5519998853434"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <input
+                className={styles.btn}
+                type="button"
+                value="Entrar em Contato"
+              />
+            </a>
+
             <p className={styles.text_performance}>Local de alta qualidade</p>
           </div>
           <div className={styles.box_fantasies}>

@@ -36,7 +36,7 @@ export function Location() {
                 <span>
                   <ICON.BiLogoWhatsapp className={styles.icon} />
                 </span>
-                <p>+55 19 99885-3434</p>
+                <p>+55 19 99771-5391</p>
               </div>
             </div>
           </div>
