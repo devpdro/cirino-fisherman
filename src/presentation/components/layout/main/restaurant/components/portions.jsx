@@ -10,6 +10,7 @@ export function Portions() {
       <h1 className={styles.title}>Porções</h1>
       <div className={styles.carousel_container}>
         <Splide
+          className={styles.carousel}
           options={{
             type: 'slide',
             perPage:
@@ -22,7 +23,8 @@ export function Portions() {
                 : 4,
             perMove: 1,
             gap: '1rem',
-            arrows: false,
+            arrows: true,
+            showIndicators: false,
           }}
         >
           {images_foods.map((slide, index) => (

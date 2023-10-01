@@ -33,37 +33,41 @@
     margin-bottom: 5.8rem;
     text-align: center;
     cursor: pointer;
-    .box_carousel {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 300px;
-      height: 250px;
-      margin: 5rem 1.6rem 0 1.7rem;
-      border-radius: 1px 1px 0px 0px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      border: 3px solid #dceacb;
-    }
-    .description {
-      color: #012e19;
-      text-align: center;
-      background-color: #dceacb;
-      padding: 0.9rem 0rem 1rem 0rem;
-      padding-top: 0.9rem;
-      padding-bottom: 1rem;
-      width: 300px;
-      margin: 0rem 1.6rem 5rem 1.7rem;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      font-size: 1.2rem;
-      border: 3px solid #dceacb;
-      border-top: none;
-      border-radius: 0px 0px 10px 10px;
+    .carousel {
+      z-index: 0 !important;
+
+      .box_carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 250px;
+        margin: 5rem 1.6rem 0 1.7rem;
+        border-radius: 1px 1px 0px 0px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 3px solid #dceacb;
+      }
+      .description {
+        color: #012e19;
+        text-align: center;
+        background-color: #dceacb;
+        padding: 0.9rem 0rem 1rem 0rem;
+        padding-top: 0.9rem;
+        padding-bottom: 1rem;
+        width: 300px;
+        margin: 0rem 1.6rem 5rem 1.7rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-size: 1.2rem;
+        border: 3px solid #dceacb;
+        border-top: none;
+        border-radius: 0px 0px 10px 10px;
+      }
     }
   }
 }
@@ -73,7 +77,7 @@
 */
 
 @media (max-width: 767px) {
- .subtitle {
+  .subtitle {
     color: #80b240;
     font-size: 1rem !important;
     background-color: rgba(128, 178, 64, 0.5);

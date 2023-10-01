@@ -14,29 +14,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    .box {
-      border: 1px solid #81b24052;
-      font-family: 'DM Sans';
-      width: 125px;
-      height: auto;
-      border-radius: 4px;
-      background-color: #00000060;
-      margin: 2rem 2rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      &:hover {
-        background-color: #000;
-        transform: scale(1.1);
-        color: #80b240;
-      }
-      .icon {
-        margin: 1.7rem 0rem 0rem 0rem;
-        font-size: 2.1rem;
-      }
-      .text {
-        .paragraph {
-          padding: 0rem 1rem 1.7rem 1rem;
-          font-size: 1rem;
+    a {
+      color: #fff;
+      text-decoration: none;
+      .box {
+        border: 1px solid #81b24052;
+        font-family: 'DM Sans';
+        width: 125px;
+        height: auto;
+        border-radius: 4px;
+        background-color: #00000060;
+        margin: 2rem 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: #000;
+          transform: scale(1.1);
+          color: #80b240;
+        }
+        .icon {
+          margin: 1.7rem 0rem 0rem 0rem;
+          font-size: 2.1rem;
+        }
+        .text {
+          .paragraph {
+            padding: 0rem 1rem 1.7rem 1rem;
+            font-size: 1rem;
+          }
         }
       }
     }

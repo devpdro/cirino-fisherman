@@ -1,7 +1,7 @@
 import styles from './footer.module.scss'
 export function Footer() {
   return (
-    <section className={styles.container}>
+    <section id="rodape" className={styles.container}>
       <div className={styles.box_container}>
         <div className={styles.box}>
           <div className={styles.copyright}>

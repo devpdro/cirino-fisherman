@@ -5,7 +5,7 @@ import { Map } from './components/map'
 import styles from './location.module.scss'
 export function Location() {
   return (
-    <section>
+    <section id="localizacao">
       <LocationThumb title="Localização" subtitle="Venha nos visitar!" />
       <div className={styles.container}>
         <span className={styles.subtitle}>Nossa localização</span>
@@ -37,6 +37,30 @@ export function Location() {
                   <ICON.BiLogoWhatsapp className={styles.icon} />
                 </span>
                 <p>+55 19 99771-5391</p>
+              </div>
+              <div>
+                <span>
+                  <ICON.AiOutlineInstagram className={styles.icon} />
+                </span>
+                <a href="https://www.instagram.com/pesqueirocirino/?igshid=NzZlODBkYWE4Ng%3D%3D">
+                  <p>pesqueirocirino</p>
+                </a>
+              </div>
+              <div>
+                <span>
+                  <ICON.AiOutlineFacebook className={styles.icon} />
+                </span>
+                <a href="https://www.facebook.com/pesqueirocpesqueirocirino?mibextid=ZbWKwL-5391">
+                  Pesqueiro Cirino
+                </a>
+              </div>
+              <div>
+                <span>
+                  <ICON.AiOutlineFacebook className={styles.icon} />
+                </span>
+                <a href="https://www.facebook.com/pesqueirodocirino?mibextid=ZbWKwL">
+                  Pesqueiro Do Cirino
+                </a>
               </div>
             </div>
           </div>

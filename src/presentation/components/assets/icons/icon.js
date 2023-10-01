@@ -1,9 +1,14 @@
-import { AiOutlineCheck } from 'react-icons/ai'
+import {
+  AiOutlineCheck,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+} from 'react-icons/ai'
 import { BiRestaurant, BiLogoWhatsapp, BiTime } from 'react-icons/bi'
 import {
   BsArrowCounterclockwise,
   BsCalendarRange,
   BsCardChecklist,
+  BsTelephone,
 } from 'react-icons/bs'
 import { BsPencilSquare } from 'react-icons/bs'
 import { FaBan, FaDollarSign } from 'react-icons/fa'
@@ -28,4 +33,7 @@ export const ICON = {
   BiLogoWhatsapp,
   PiArrowFatLineRightFill,
   BiTime,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  BsTelephone,
 }

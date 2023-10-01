@@ -5,7 +5,7 @@ import styles from './gallery-images.module.scss'
 
 export function GalleryImages() {
   return (
-    <section className={styles.container}>
+    <section id="fotos" className={styles.container}>
       <span className={styles.subtitle}>Belas fisgadas</span>
       <h1 className={styles.title}>Galeria</h1>
       <h2>

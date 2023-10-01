@@ -4,7 +4,7 @@ import styles from './rent-price.module.scss'
 
 export function RentPrice() {
   return (
-    <section className={styles.container}>
+    <section id="preco" className={styles.container}>
       <span className={styles.subtitle}>Alugar local de eventos</span>
       <h1 className={styles.title}>Preços</h1>
       <div className={styles.price_container}>
@@ -30,7 +30,9 @@ export function RentPrice() {
               />
             </a>
 
-            <p className={styles.text_performance}>Local de alta qualidade</p>
+            <p className={styles.text_performance}>
+              Local ideal para eventos de alta qualidade
+            </p>
           </div>
           <div className={styles.box_fantasies}>
             <p>
@@ -57,17 +59,14 @@ export function RentPrice() {
             <p>Uma experiência única aguarda por você.</p>
           </div>
           <div className={styles.box_price}>
-            <p className={styles.text_price}>
-              A partir de <span> R$ 0.000,00</span>
-            </p>
-            <p className={styles.text_fees}>Entrada 100% gratuita</p>
+            <p className={styles.text_price}></p>
             <input
               className={styles.btn}
               type="button"
               value="Explorar galeria de fotos"
             />
             <p className={styles.text_performance}>
-              Aqui você paga apenas pelo peixe que pesca.
+              Local ideal para a diversão
             </p>
           </div>
           <div className={styles.box_fantasies}>

@@ -4,7 +4,7 @@ import styles from './about.module.scss'
 import { Activities } from './components/activities'
 export function About() {
   return (
-    <main id="#sobre-nos" className={styles.main}>
+    <main id="sobre-nos" className={styles.main}>
       <span className={styles.subtitle}>Nossa história</span>
       <h1 className={styles.title}>Conheça</h1>
       <div className={styles.box_about}>

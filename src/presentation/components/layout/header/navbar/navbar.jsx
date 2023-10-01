@@ -31,28 +31,10 @@ export function Navbar() {
             <li>
               <a
                 className={styles.link}
-                href="#pesqueiro"
-                onClick={menuToggleHandler}
-              >
-                Pesqueiro
-              </a>
-            </li>
-            <li>
-              <a
-                className={styles.link}
                 href="#sobre-nos"
                 onClick={menuToggleHandler}
               >
                 Sobre nós
-              </a>
-            </li>
-            <li>
-              <a
-                className={styles.link}
-                href="#lanchonete"
-                onClick={menuToggleHandler}
-              >
-                Lanchonete
               </a>
             </li>
             <div className={styles.div_logo}>
@@ -89,6 +71,15 @@ export function Navbar() {
                 onClick={menuToggleHandler}
               >
                 Localização
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.link}
+                href="#rodape"
+                onClick={menuToggleHandler}
+              >
+                Contato
               </a>
             </li>
           </ul>
