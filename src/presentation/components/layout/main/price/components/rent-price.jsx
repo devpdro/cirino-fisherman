@@ -60,11 +60,15 @@ export function RentPrice() {
           </div>
           <div className={styles.box_price}>
             <p className={styles.text_price}></p>
-            <input
-              className={styles.btn}
-              type="button"
-              value="Explorar galeria de fotos"
-            />
+            <a href="#fotos">
+              {' '}
+              <input
+                className={styles.btn}
+                type="button"
+                value="Explorar galeria de fotos"
+              />
+            </a>
+
             <p className={styles.text_performance}>
               Local ideal para a diversão
             </p>
