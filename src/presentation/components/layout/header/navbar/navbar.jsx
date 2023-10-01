@@ -31,10 +31,28 @@ export function Navbar() {
             <li>
               <a
                 className={styles.link}
+                href="#pesqueiro"
+                onClick={menuToggleHandler}
+              >
+                Pesqueiro
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.link}
                 href="#sobre-nos"
                 onClick={menuToggleHandler}
               >
                 Sobre nós
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.link}
+                href="#fotos"
+                onClick={menuToggleHandler}
+              >
+                Fotos
               </a>
             </li>
             <div className={styles.div_logo}>
@@ -53,15 +71,6 @@ export function Navbar() {
                 onClick={menuToggleHandler}
               >
                 Preço
-              </a>
-            </li>
-            <li>
-              <a
-                className={styles.link}
-                href="#fotos"
-                onClick={menuToggleHandler}
-              >
-                Fotos
               </a>
             </li>
             <li>

@@ -21,7 +21,7 @@ export function Location() {
                 <span>
                   <ICON.BiTime className={styles.icon} />
                 </span>
-                <p>Quarta-feira a Domingo e Feriados: 8h às 18:horas</p>
+                <p>Quarta-feira a Domingo e Feriados: 8h às 18horas</p>
               </div>
             </div>
             <div className={styles.time}>

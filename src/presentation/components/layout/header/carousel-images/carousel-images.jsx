@@ -7,7 +7,7 @@ import styles from './carousel-images.module.scss'
 import { AttractiveBox } from './components/attractive-box'
 export function CarouselImages() {
   return (
-    <div className={styles.carousel_container}>
+    <section id="pesqueiro" className={styles.carousel_container}>
       <Carousel
         showStatus={false}
         showArrows={false}
@@ -33,6 +33,6 @@ export function CarouselImages() {
           </div>
         ))}
       </Carousel>
-    </div>
+    </section>
   )
 }

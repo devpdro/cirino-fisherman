@@ -17,7 +17,7 @@ export function RentPrice() {
             <p className={styles.text_price}>
               Apenas <span>Sob Orçamento</span>
             </p>
-            <p className={styles.text_fees}>em até 3 vezes sem juros!</p>
+            <p className={styles.text_fees}>em até 2 vezes sem juros!</p>
             <a
               href="https://api.whatsapp.com/send?phone=5519998853434"
               target="_blank"
@@ -31,7 +31,7 @@ export function RentPrice() {
             </a>
 
             <p className={styles.text_performance}>
-              Local ideal para eventos de alta qualidade
+              O local perfeito para comemorar
             </p>
           </div>
           <div className={styles.box_fantasies}>
@@ -70,7 +70,7 @@ export function RentPrice() {
             </a>
 
             <p className={styles.text_performance}>
-              Local ideal para a diversão
+              O local ideal para a diversão para toda a família
             </p>
           </div>
           <div className={styles.box_fantasies}>
