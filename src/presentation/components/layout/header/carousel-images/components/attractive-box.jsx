@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll'
+
 import { ICON } from 'presentation/components/assets/icons/icon'
 
 import styles from './attractive-box.module.scss'
@@ -5,10 +7,7 @@ export function AttractiveBox() {
   return (
     <section className={styles.container}>
       <div className={styles.section}>
-        <a
-          href="#sobre-nos
-        "
-        >
+        <Link activeClass="active" to="sobre-nos" spy={true} smooth={true}>
           <div className={styles.box}>
             <div className={styles.icon}>
               <ICON.GiBoatFishing />
@@ -17,8 +16,8 @@ export function AttractiveBox() {
               <p className={styles.paragraph}>Sobre nós</p>
             </div>
           </div>
-        </a>
-        <a href="#rodape">
+        </Link>
+        <Link activeClass="active" to="rodape" spy={true} smooth={true}>
           <div className={styles.box}>
             <div className={styles.icon}>
               <ICON.BsTelephone />
@@ -27,8 +26,8 @@ export function AttractiveBox() {
               <p className={styles.paragraph}>Contato</p>
             </div>
           </div>
-        </a>
-        <a href="#fotos">
+        </Link>
+        <Link activeClass="active" to="fotos" spy={true} smooth={true}>
           <div className={styles.box}>
             <div className={styles.icon}>
               <ICON.IoMdImages />
@@ -37,8 +36,8 @@ export function AttractiveBox() {
               <p className={styles.paragraph}>Fotos</p>
             </div>
           </div>
-        </a>
-        <a href="#localizacao">
+        </Link>
+        <Link activeClass="active" to="localizacao" spy={true} smooth={true}>
           {' '}
           <div className={styles.box}>
             <div className={styles.icon}>
@@ -48,7 +47,7 @@ export function AttractiveBox() {
               <p className={styles.paragraph}>Localização</p>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </section>
   )

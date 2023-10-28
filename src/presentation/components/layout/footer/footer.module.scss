@@ -2,7 +2,7 @@
   font-family: 'Poppins', sans-serif;
   background-image: url('../../assets/fishing-boat/img/lago_de_pesca_dia.JPG');
   border-top: 2px solid #80b240;
-  height: 175px;
+  height: 225px;
   background-attachment: fixed;
   background-size: cover;
   .box_container {
@@ -11,14 +11,14 @@
     .box {
       margin: 1.5rem 2.2rem 1.5rem 2rem;
       background-color: #fff;
-      width: 92%;
-      height: 125px;
+      width: 94%;
+      height: 175px;
       display: flex;
       color: #012e19;
       align-items: flex-start;
       justify-content: space-between;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      border-radius: 2px;
+      border-radius: 3px;
       .copyright {
         padding: 1rem;
         h1 {

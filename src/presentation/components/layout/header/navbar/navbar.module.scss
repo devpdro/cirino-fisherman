@@ -10,6 +10,7 @@
   width: 100%;
   color: #012e19;
   z-index: 1;
+  transition: top 0.5s ease;
 
   .header__content {
     @include centralize_center;

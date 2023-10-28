@@ -8,9 +8,6 @@ export function Footer() {
             <h1>©2023 PESQUEIRO DO CIRINO.</h1>
             <p>Todos os direitos resevados.</p>
           </div>
-          <div className={styles.developer}>
-            Desenvolvido por: <span>CONFIDENCIAL</span>
-          </div>
         </div>
       </div>
     </section>

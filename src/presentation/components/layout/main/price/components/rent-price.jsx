@@ -1,14 +1,41 @@
+import { useEffect } from 'react'
+import { Link } from 'react-scroll'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { ICON } from 'presentation/components/assets/icons/icon'
 
 import styles from './rent-price.module.scss'
 
 export function RentPrice() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <section id="preco" className={styles.container}>
-      <span className={styles.subtitle}>Alugar local de eventos</span>
-      <h1 className={styles.title}>Preços</h1>
+      <span
+        className={styles.subtitle}
+        data-aos="fade-down"
+        data-aos-easing="ease"
+        data-aos-duration="1500"
+      >
+        Alugar local de eventos
+      </span>
+      <h1
+        data-aos="fade-down"
+        data-aos-easing="ease"
+        data-aos-duration="1500"
+        className={styles.title}
+      >
+        Preços
+      </h1>
       <div className={styles.price_container}>
-        <div className={styles.shed}>
+        <div
+          data-aos="fade-right"
+          data-aos-easing="ease"
+          data-aos-duration="1500"
+          className={styles.shed}
+        >
           <div className={styles.box_title}>
             <h2>Local para eventos</h2>
             <p>O local ideal para casamentos e diversas ocasiões especiais.</p>
@@ -53,21 +80,26 @@ export function RentPrice() {
             </p>
           </div>
         </div>
-        <div className={styles.fishing}>
+        <div
+          data-aos="fade-left"
+          data-aos-easing="ease"
+          data-aos-duration="1500"
+          className={styles.fishing}
+        >
           <div className={styles.box_title}>
             <h2>Pesqueiro</h2>
             <p>Uma experiência única aguarda por você.</p>
           </div>
           <div className={styles.box_price}>
             <p className={styles.text_price}></p>
-            <a href="#fotos">
+            <Link activeClass="active" to="fotos" spy={true} smooth={true}>
               {' '}
               <input
                 className={styles.btn}
                 type="button"
                 value="Explorar galeria de fotos"
               />
-            </a>
+            </Link>
 
             <p className={styles.text_performance}>
               O local ideal para a diversão para toda a família

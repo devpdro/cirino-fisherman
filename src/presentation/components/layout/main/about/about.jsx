@@ -1,14 +1,40 @@
+import { useEffect } from 'react'
+
+import AOS from 'aos'
 import Better from 'presentation/components/assets/about/better.jpeg'
+import 'aos/dist/aos.css'
 
 import styles from './about.module.scss'
-import { Activities } from './components/activities'
+
 export function About() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <main id="sobre-nos" className={styles.main}>
-      <span className={styles.subtitle}>Nossa história</span>
-      <h1 className={styles.title}>Conheça</h1>
+      <span
+        data-aos="fade-down"
+        data-aos-easing="ease"
+        data-aos-duration="1500"
+        className={styles.subtitle}
+      >
+        Nossa história
+      </span>
+      <h1
+        data-aos="fade-down"
+        data-aos-easing="ease"
+        data-aos-duration="1000"
+        className={styles.title}
+      >
+        Conheça
+      </h1>
       <div className={styles.box_about}>
-        <div className={styles.about}>
+        <div
+          data-aos="fade-right"
+          data-aos-easing="ease"
+          data-aos-duration="1500"
+          className={styles.about}
+        >
           <h4>Aurea Benedito Cirino</h4>
           <h1>Fundou o Pesqueiro do Cirino</h1>
           <p>
@@ -21,11 +47,15 @@ export function About() {
             Tilápias e Carpas, que proporcionam experiências inesquecíveis.
           </p>
         </div>
-        <div className={styles.pesqueiro}>
+        <div
+          data-aos="fade-left"
+          data-aos-easing="ease"
+          data-aos-duration="1500"
+          className={styles.pesqueiro}
+        >
           <img src={Better} alt="Melhor pesqueiro do ano" />
         </div>
       </div>
-      <Activities />
     </main>
   )
 }
