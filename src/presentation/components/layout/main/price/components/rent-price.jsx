@@ -44,7 +44,7 @@ export function RentPrice() {
             <p className={styles.text_price}>
               Apenas <span>Sob Orçamento</span>
             </p>
-            <p className={styles.text_fees}>em até 2 vezes sem juros!</p>
+            <p className={styles.text_fees}>Em até 2 vezes sem juros!</p>
             <a
               href="https://api.whatsapp.com/send?phone=5519998853434"
               target="_blank"
@@ -91,7 +91,11 @@ export function RentPrice() {
             <p>Uma experiência única aguarda por você.</p>
           </div>
           <div className={styles.box_price}>
-            <p className={styles.text_price}></p>
+            <p className={styles.text_price}>
+              {' '}
+              Preço <span>Dinâmico</span>
+            </p>
+            <p className={styles.text_fees}>Veja a galeria de fotos!</p>
             <Link activeClass="active" to="fotos" spy={true} smooth={true}>
               {' '}
               <input

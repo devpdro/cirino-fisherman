@@ -8,6 +8,19 @@ export function Footer() {
             <h1>©2023 PESQUEIRO DO CIRINO.</h1>
             <p>Todos os direitos resevados.</p>
           </div>
+          <div className={styles.developer}>
+            <p>
+              ©{' '}
+              <a
+                href="https://vrwdeveloper.com.br/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                VRWEB
+              </a>
+              . Todos os direitos reservados
+            </p>
+          </div>
         </div>
       </div>
     </section>

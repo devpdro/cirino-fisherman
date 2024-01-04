@@ -15,17 +15,14 @@ export function Location() {
             <Map />
           </div>
           <div className={styles.box_contact}>
-            <div className={styles.contact}>
-              <h3>Horário</h3>
+            <div className={styles.time}>
+              <h3>Contato</h3>
               <div>
                 <span>
                   <ICON.BiTime className={styles.icon} />
                 </span>
                 <p>Quarta-feira a Domingo e Feriados: 8h às 18horas</p>
               </div>
-            </div>
-            <div className={styles.time}>
-              <h3>Contato</h3>
               <div>
                 <span>
                   <ICON.IoLocationOutline className={styles.icon} />
