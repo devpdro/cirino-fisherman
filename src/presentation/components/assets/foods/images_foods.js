@@ -1,11 +1,11 @@
-import foto1 from 'presentation/components/assets/foods/img/aneis_de_cebola.jpg'
-import foto2 from 'presentation/components/assets/foods/img/camarao_frito.jpg'
-import foto3 from 'presentation/components/assets/foods/img/costela_de_pacu.jpg'
-import foto12 from 'presentation/components/assets/foods/img/costelinha_de_tilapia.jfif'
-import foto5 from 'presentation/components/assets/foods/img/file_de_tilapia.jpg'
-import foto6 from 'presentation/components/assets/foods/img/frango_a_passarinho.jpg'
+import foto1 from 'presentation/components/assets/foods/img/aneis_de_cebola.webp'
+import foto2 from 'presentation/components/assets/foods/img/camarao_frito.webp'
+import foto3 from 'presentation/components/assets/foods/img/costela_de_pacu.webp'
+import foto12 from 'presentation/components/assets/foods/img/costelinha_de_tilapia.webp'
+import foto5 from 'presentation/components/assets/foods/img/file_de_tilapia.webp'
+import foto6 from 'presentation/components/assets/foods/img/frango_a_passarinho.webp'
 import foto7 from 'presentation/components/assets/foods/img/fritas.webp'
-import foto8 from 'presentation/components/assets/foods/img/mandioca_frita.jpg'
+import foto8 from 'presentation/components/assets/foods/img/mandioca_frita.webp'
 
 const images_foods = [
   {

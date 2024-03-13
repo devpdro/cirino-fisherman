@@ -12,11 +12,11 @@ export function Footer() {
             <p>
               ©{' '}
               <a
-                href="https://vrwdeveloper.com.br/"
+                href="https://mattedev.com.br/"
                 target="_blank"
                 rel="noreferrer"
               >
-                VRWEB
+                Matte
               </a>
               . Todos os direitos reservados
             </p>

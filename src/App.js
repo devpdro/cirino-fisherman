@@ -9,15 +9,15 @@ export function App() {
     <main>
       <Helmet>
         <title>Pesqueiro do Cirino</title>
+        <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Pesque e Pague São Pedro oferece uma experiência única de pesca em São Pedro, SP. Venha desfrutar de um dia incrível de pesca em um ambiente relaxante."
+          content="Pesque e Pague oferece uma experiência única de pesca em São Pedro, SP. Venha desfrutar de um dia incrível de pesca em um ambiente relaxante."
         />
         <meta
           name="keywords"
           content="pesqueiro, pesque e pague, São Pedro, pescaria, pesca"
         />
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <Home />
       <WhatsAppButton />

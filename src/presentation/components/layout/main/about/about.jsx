@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 import AOS from 'aos'
-import Better from 'presentation/components/assets/about/better.jpeg'
+import Better from 'presentation/components/assets/about/better.webp'
 import 'aos/dist/aos.css'
 
 import styles from './about.module.scss'

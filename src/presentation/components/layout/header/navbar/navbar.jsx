@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-scroll'
 
-import Logo from 'presentation/components/assets/soon/logo.png'
+import Logo from 'presentation/components/assets/soon/logo.webp'
 import { useWindowSize } from 'presentation/hooks/use-window-size'
 
 import styles from './navbar.module.scss'
