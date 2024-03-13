@@ -23,7 +23,7 @@
       border-radius: 3px;
 
       .copyright {
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
 
         h1 {
           font-size: 1rem;
@@ -63,6 +63,7 @@
     height: 125px;
     display: flex;
     color: #012e19;
+    font-size: 0.9rem !important;
     align-items: flex-start;
     justify-content: space-between;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -70,9 +71,11 @@
 
     .developer {
       padding: 1rem 0rem 1rem 1rem !important;
-      
+      text-align: right;
+
       p {
-        font-size: 1rem;
+        padding: 0 1rem 0 1rem;
+        font-size: 0.9rem !important;
 
         a {
           color: #012e19;
