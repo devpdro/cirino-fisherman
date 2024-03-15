@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
 import { WhatsAppButton } from 'utils/whats-app-button'
@@ -5,6 +6,12 @@ import { WhatsAppButton } from 'utils/whats-app-button'
 import { Home } from './presentation/pages/home'
 
 export function App() {
+  useEffect(() => {
+    const images = document.querySelectorAll('img')
+    images.forEach((image) => {
+      image.setAttribute('loading', 'lazy')
+    })
+  }, [])
   return (
     <main>
       <Helmet>
